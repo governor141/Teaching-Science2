@@ -50,20 +50,23 @@ Every week's card in the scheme of work now has a **"Generate Lesson Note"** but
 
 ### One-time setup
 1. Open the app, tap the gear icon (top-right of the home screen) to go to **Settings**.
-2. Get a free API key from Google: on your phone or computer, go to `aistudio.google.com/apikey`, sign in with a Google account, and click **Create API key**.
-3. Paste that key into the Settings screen in the app and tap **Save**. It's stored only on your phone.
+2. Choose your AI provider: **Gemini** (free, recommended) or **ChatGPT** (needs a funded OpenAI account).
+   - Gemini key: go to `aistudio.google.com/apikey` on your phone or computer, sign in with a Google account, click **Create API key**.
+   - OpenAI key: go to `platform.openai.com/api-keys`.
+3. Paste that key into the matching field in Settings and tap **Save**. It's stored only on your phone. You can switch providers at any time — both keys are remembered separately.
 
 ### Using it
 1. Go to a class → term → find a week → tap **Generate Lesson Note**.
-2. The app sends the topic to Google's Gemini AI and writes a full lesson note (objectives, content, evaluation, assignment) in the standard Nigerian secondary-school format.
+2. The app sends the topic to your chosen AI and writes a full lesson note (objectives, content, evaluation, assignment) in the standard Nigerian secondary-school format.
 3. From the result screen you can:
    - **Regenerate** if you want a different version
    - **Download TXT** or **Download CSV** — saved straight to your phone's Downloads folder
    - **Share** — opens Android's share sheet so you can send it straight to WhatsApp
+   - **Ask a follow-up question** — a chat box right below the note. Type a question, or tap the mic icon to ask by voice (uses your phone's built-in speech recognition — Android will ask for microphone permission the first time).
 
 This feature needs an internet connection; everything else in the app (browsing the scheme of work) still works fully offline.
 
-Because this now calls the internet, I've added the `INTERNET` permission to the app — you may see Android ask for network access the first time, which is expected.
+Because this now calls the internet and the microphone, I've added the `INTERNET` and `RECORD_AUDIO` permissions to the app — Android will ask for these the first time, which is expected.
 
 ## Adding more subjects later
 All the scheme-of-work content lives in one file:
